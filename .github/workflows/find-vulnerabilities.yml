@@ -44,6 +44,7 @@ jobs:
           check-compliance: true
           compliance-fail-on-vulnerabilities: true
           outputs-archive-name: "purldb-find-vulnerabilities-scan"
+          scancodeio-image: "ghcr.io/aboutcode-org/scancode.io@sha256:c633f971499e59b841a44ce6822f337f6e5a7bc24baccf55c82ed93eb7c433c1"  # v38.1.0
         env:
           VULNERABLECODE_URL: https://public.vulnerablecode.io/
           VULNERABLECODE_API_KEY: ${{ secrets.VULNERABLECODE_API_KEY }}
