@@ -6,6 +6,8 @@ on:
     # Run weekly
     - cron: '0 0 * * 0'
   push:
+    branches: # add temporarily for testing on fork
+      - scancode-next-add-inspect-packages-scan
     tags:
       - "v*.*.*"
       - "minecode-pipelines/*"
